@@ -29,3 +29,81 @@
 .nav-link:hover {
     color: #8A6F2E !important;
 }
+
+.navbar-toggler {
+    border-color: #C9A84C; 
+    border-width: 2px;    
+    padding: 5px;          
+}
+
+/* --- muda cor do hamburguer--- */
+.navbar-toggler-icon {
+    filter: invert(72%) sepia(50%) saturate(450%) hue-rotate(5deg) brightness(95%) contrast(90%);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(201, 168, 76, 0.25); 
+    
+}
+
+/* Inicio */
+/* --- FUNDO DA SEÇÃO PRINCIPAL --- */
+.bg-custom {
+    background-color: #1C1917;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh; /* Faz a seção ser alta e imponente */
+}
+
+.titulo-principal {
+    font-family: 'Cormorant Garamond', serif !important; 
+}
+
+.texto-dourado {
+    color: #C9A84C;
+}
+
+
+.deco {
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 4px; 
+    color: #C9A84C;      
+    font-size: 0.7rem;
+}
+
+.texto-principal {
+    font-family:  'Jost', sans-serif;
+    color: #C8B99A;
+}
+
+.btn-explore {
+    font-family: 'Jost', serif;
+    background-color: #C9A84C;
+    color: #0F0D0B;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: #8A6F2E;
+    color: rgb(0, 0, 0);
+    transform: translateY(-3px); /* Levanta levemente ao passar o mouse */
+}
+
+
+.btn-blog-link {
+    font-family: 'Jost', serif;
+    background: transparent;
+    color: #C8B99A;
+    padding: 12px 30px;
+    transition: 0.3s;
+}
+
+.btn-blog-link:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
