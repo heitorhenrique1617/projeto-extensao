@@ -46,8 +46,10 @@
     
 }
 
-/* Inicio */
-/* --- FUNDO DA SEÇÃO PRINCIPAL --- */
+/* ------------------------------
+Inicio - Seção Principal
+--------------------------------- */
+
 .bg-custom {
     background-color: #1C1917;
     background-size: cover;
@@ -56,24 +58,43 @@
 }
 
 .titulo-principal {
-    font-family: 'Cormorant Garamond', serif !important; 
+    opacity: 0;
+    font-family: 'Cormorant Garamond', serif !important;
+    animation: subirEntrada 0.5s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
 .texto-dourado {
     color: #C9A84C;
 }
 
+.linha {
+    opacity: 0;
+    animation: subirEntrada 0.5s ease-out forwards;
+    animation-delay: 0.4s;
+}
 
 .deco {
+    opacity: 0;
     font-family: 'Jost', sans-serif;
     letter-spacing: 4px; 
     color: #C9A84C;      
     font-size: 0.7rem;
+    animation: subirEntrada 0.5s ease-out forwards;
 }
 
 .texto-principal {
+    opacity: 0;
     font-family:  'Jost', sans-serif;
     color: #C8B99A;
+    animation: subirEntrada 0.5s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.container-botoes {
+    opacity: 0;
+    animation: subirEntrada 0.5s ease-out forwards;
+    animation-delay: 0.8s;
 }
 
 .btn-explore {
@@ -93,6 +114,14 @@
     transform: translateY(-3px); /* Levanta levemente ao passar o mouse */
 }
 
+.btn-explore:focus,
+.btn-explore:active {
+    background-color: #8A6F2E !important;
+    color: #F5EDD6 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
 
 .btn-blog-link {
     font-family: 'Jost', serif;
@@ -107,3 +136,45 @@
     transform: translateY(-3px);
 }
 
+.btn-blog-link:focus,
+.btn-blog-link:active {
+    color: #f8f8f8 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.emoji-fundo {
+    font-size: clamp(200px, 20vw, 300px);
+    opacity: 0.06;
+    z-index: 0;
+    position: absolute;
+    background: radial-gradient(
+    circle at center,
+    rgba(201, 168, 76, 0.3) 0%,
+    rgba(201, 168, 76, 0) 70%
+  );
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* keyframe */
+
+@keyframes subirEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.bg-custom-destaque {
+    background-color: #27231E;
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh; 
+}
