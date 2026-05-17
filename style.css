@@ -172,9 +172,46 @@ Inicio - Seção Principal
 }
 
 
+
+/* ---------------------------------
+Seção Frase Destaque
+---------------------------------*/
+
 .bg-custom-destaque {
     background-color: #27231E;
     background-size: cover;
     background-position: center;
-    min-height: 30vh; 
+    min-height: 10vh !important;
 }
+
+
+
+.destaque {
+    font-family: 'Cormorant Garamond', serif;
+    color: #C8B99A
+}
+
+.texto-destaque {
+    font-family: 'jost', serif;
+    color: #C9A84C;
+}
+
+
+/* ---------------------------------
+Rodapé
+---------------------------------*/
+
+.bg-footer {
+    background: #0F0D0B;
+}
+
+.titulo-footer {
+    color: #8A6F2E;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.text-secondary-custom {
+    color: #7A6E62;
+    font-family: 'Jost', serif;
+}
+
