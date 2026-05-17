@@ -215,3 +215,12 @@ Rodapé
     font-family: 'Jost', serif;
 }
 
+.text-decoration-none {
+    transition: all;
+}
+
+.text-decoration-none:hover {
+    color: #8A6F2E;
+}
+
+
