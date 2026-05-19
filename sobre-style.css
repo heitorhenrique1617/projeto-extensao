@@ -1,0 +1,142 @@
+/* --- MENU --- */
+.navbar-custom {
+    background: #0F0D0B;
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #C9A84C;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link {
+    color: #7A6E62;
+    font-family: 'Jost', serif;
+    margin-left: 15px;
+}
+
+.navbar-toggler {
+    border-color: #C9A84C; 
+    border-width: 2px;    
+    padding: 5px;          
+}
+
+.navbar-toggler-icon {
+    filter: invert(72%) sepia(50%) saturate(450%) hue-rotate(5deg) brightness(95%) contrast(90%);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(201, 168, 76, 0.25); 
+}
+
+/* Configurações de Fundo */
+.bg-sobre-hero {
+    background-color: #1C1917;
+    min-height: 20vh;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+}
+
+.bg-sobre-principal {
+    background-color: #27231E;
+    min-height: 80vh;
+}
+
+
+.texto-introducao {
+    font-family: 'Jost', serif;
+    color: #C9A84C;
+}
+
+.titulo-introducao {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F5EDD6;
+}
+
+.texto-principal {
+    font-family: 'Jost', serif;
+    color: #C8B99A;
+}
+
+
+.leitura-otimizada {
+    max-width: 780px !important;
+}
+
+/* Títulos das Seções */
+.titulo-secao-sobre {
+    font-family: 'Cormorant Garamond', serif !important;
+    color: #F5EDD6;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.desc-texto {
+    font-family: 'Jost', sans-serif;
+    color: #C8B99A;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.desc-texto strong {
+    color: #C9A84C;
+    font-weight: 500;
+}
+
+/* Bloco de Citação / Destaque */
+.frase-destaque {
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid #C9A84C;
+    padding: 30px;
+    color: #D8C7A5;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    font-style: italic;
+    backdrop-filter: blur(4px);
+}
+
+/* Botão de Rodapé Interno */
+.border-gold {
+    border-color: rgba(201, 168, 76, 0.15) !important;
+}
+
+.btn-voltar-home {
+    font-family: 'Jost', sans-serif;
+    color: #C9A84C;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-voltar-home:hover {
+    color: #F5EDD6;
+    transform: translateY(-2px);
+}
+
+/* --- ANIMAÇÂO SCROLL --- */
+.animar-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                transform 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.animar-scroll.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Rodapé */
+.bg-footer { background: #0F0D0B; }
+.titulo-footer { color: #8A6F2E; font-family: 'Cormorant Garamond', serif; }
+.text-secondary-custom { color: #7A6E62; font-family: 'Jost', serif; }
