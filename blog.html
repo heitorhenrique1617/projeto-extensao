@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Pointe - Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog-style.css">
+</head>
+<body>
+
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">En Pointe - Museu Virtual do Balé</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="museu.html">Museu</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Inicial -->
+    <section id="blog-intro" class="py-5 bg-blog-introducao text-start d-flex align-items-center">
+        <div class="container py-1">
+            <p class="texto-introducao lead text-start mb-2 fs-6 mx-auto">Bastidores & Ensaios</p>
+            <h1 class="titulo-introducao display-3 fw-bold mb-4">Crônicas da Dança</h1>
+            <p class="texto-principal lead text-start mb-1 fs-6 mx-auto">Artigos, reflexões, entrevistas e narrativas que aprofundam a nossa conexão com o universo do balé.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo do Blog Destaque -->
+    <section id="blog-conteudo" class="py-5 bg-blog-principal">
+        <div class="container py-4">
+            
+            <div class="row mb-5 g-4 align-items-center animar-scroll">
+                <div class="col-lg-6">
+                    <div class="img-destaque-placeholder d-flex align-items-center justify-content-center">
+                        <span class="texto-placeholder">🩰 Imagem de Capa</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="blog-tag text-uppercase mb-2 d-inline-block">ENTREVISTA</span>
+                    <h2 class="titulo-artigo-destaque display-5 mb-3">De Londrina para os palcos de New York: A jornada de xxxx</h2>
+                    <p class="desc-texto mb-4">O balé exige uma entrega que assusta no começo, mas cruzar o oceano me mostrou que a nossa dança tem uma alma única. <br> Descubra como a disciplina da Escola Bolshoi preparou Ana para enfrentar as rigorosas audições europeias, o choque cultural dos primeiros meses na Alemanha e o conselho que ela deixa para a nova geração de bailarinos brasileiros.</p>
+                    <div class="meta-texto mb-4">Por Heitor Henrique &middot; 19 de Maio, 2026</div>
+                    <a href="post.html" class="btn-ler-mais">LER ARTIGO &rarr;</a>
+                </div>
+            </div>
+
+            <hr class="border-gold my-5 opacity-25">
+
+            <!-- Navegação Tags -->
+            <div class="d-flex gap-3 flex-wrap mb-5 animar-scroll">
+                <a href="#" class="filtro-tag ativo">Todos</a>
+                <a href="#" class="filtro-tag">História</a>
+                <a href="#" class="filtro-tag">Bastidores</a>
+                <a href="#" class="filtro-tag">Críticas</a>
+                <a href="#" class="filtro-tag">Entrevistas</a>
+            </div>
+
+            <div class="row g-4">
+                
+                <!-- Conteúdo Blog -->
+                <div class="col-md-4 animar-scroll">
+                    <div class="blog-card">
+                        <div class="card-img-placeholder d-flex align-items-center justify-content-center">
+                            <span>🎭</span>
+                        </div>
+                        <div class="card-corpo">
+                            <span class="blog-tag text-uppercase mb-2 d-inline-block">Bastidores</span>
+                            <h3 class="titulo-card-artigo">A rotina invisível por trás das sapatilhas de ponta</h3>
+                            <p class="texto-card-artigo">A preparação física, o processo de quebra do gesso e os sacrifícios diários que sustentam a leveza técnica nos palcos.</p>
+                            <a href="#" class="btn-ler-mais-card">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 animar-scroll delay-1">
+                    <div class="blog-card">
+                        <div class="card-img-placeholder d-flex align-items-center justify-content-center">
+                            <span>🎵</span>
+                        </div>
+                        <div class="card-corpo">
+                            <span class="blog-tag text-uppercase mb-2 d-inline-block">Críticas</span>
+                            <h3 class="titulo-card-artigo">Stravinsky e a revolução musical na dança</h3>
+                            <p class="texto-card-artigo">Como as composições dissonantes para os Ballets Russes desafiaram os coreógrafos a romperem com a simetria tradicional.</p>
+                            <a href="#" class="btn-ler-mais-card">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 animar-scroll delay-2">
+                    <div class="blog-card">
+                        <div class="card-img-placeholder d-flex align-items-center justify-content-center">
+                            <span>🇧🇷</span>
+                        </div>
+                        <div class="card-corpo">
+                            <span class="blog-tag text-uppercase mb-2 d-inline-block">História</span>
+                            <h3 class="titulo-card-artigo">O legado de Joinville para a América Latina</h3>
+                            <p class="texto-card-artigo">O impacto social e artístico da única filial do Teatro Bolshoi após completar um quarto de século de atuação no Brasil.</p>
+                            <a href="#" class="btn-ler-mais-card">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-footer text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="fw-bold titulo-footer">En Pointe</h3>
+                    <p class="text-secondary-custom">Museu Virtual do Balé clássico e contemporâneo.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3 titulo-footer">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-secondary-custom">Home</a></li>
+                        <li><a href="museu.html" class="text-decoration-none text-secondary-custom">Museu</a></li>
+                        <li><a href="blog.html" class="text-decoration-none text-secondary-custom">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3 titulo-footer">Contato</h5>
+                    <p class="text-secondary-custom mb-1">heitorhenrique1617@gmail.com</p>
+                    <p class="text-secondary-custom">Londrina &middot; PR</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-secondary-custom">
+                &copy; 2026 En Pointe &mdash; Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add("ativo");
+                    observador.unobserve(entrada.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -40px 0px"
+        });
+
+        document.querySelectorAll(".animar-scroll").forEach((elemento) => {
+            observador.observe(elemento);
+        });
+    });
+    </script>
+</body>
+</html>

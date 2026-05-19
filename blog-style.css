@@ -1,0 +1,218 @@
+/* Menu */
+.navbar-custom {
+    background: #0F0D0B;
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #C9A84C;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link {
+    color: #7A6E62;
+    font-family: 'Jost', serif;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.navbar-toggler {
+    border-color: #C9A84C; 
+    border-width: 2px;    
+    padding: 5px;          
+}
+
+.navbar-toggler-icon {
+    filter: invert(72%) sepia(50%) saturate(450%) hue-rotate(5deg) brightness(95%) contrast(90%);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(201, 168, 76, 0.25); 
+}
+
+/* Fundo das Seções */
+.bg-blog-introducao {
+    background-color: #1C1917;
+    min-height: 20vh; 
+}
+
+.bg-blog-principal {
+    background-color: #27231E; 
+    min-height: 100vh;
+}
+
+/* Estilização de Textos */
+.texto-introducao {
+    font-family: 'Jost', serif;
+    color: #C9A84C;
+}
+
+.titulo-introducao {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F5EDD6;
+}
+
+.texto-principal {
+    font-family: 'Jost', serif;
+    color: #C8B99A;
+}
+
+/* --- ELEMENTOS EXCLUSIVOS DO BLOG --- */
+
+/* Post em Destaque */
+.img-destaque-placeholder {
+    background-color: #14110F;
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    height: 350px;
+    color: #7A6E62;
+    font-family: 'Jost', sans-serif;
+}
+
+.titulo-artigo-destaque {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F5EDD6;
+}
+
+.desc-texto {
+    font-family: 'Jost', sans-serif;
+    color: #C8B99A; 
+    line-height: 1.7;
+}
+
+.meta-texto {
+    font-family: 'Jost', sans-serif;
+    color: #7A6E62;
+    font-size: 0.9rem;
+}
+
+.btn-ler-mais {
+    font-family: 'Jost', sans-serif;
+    color: #C9A84C;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-ler-mais:hover {
+    color: #F5EDD6;
+    padding-left: 5px;
+}
+
+.blog-tag {
+    color: #C9A84C;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.4);
+    padding-bottom: 2px;
+}
+
+/* Filtros de Categoria */
+.filtro-tag {
+    font-family: 'Jost', sans-serif;
+    color: #7A6E62;
+    text-decoration: none;
+    border: 1px solid rgba(122, 110, 98, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.filtro-tag:hover, .filtro-tag.ativo {
+    color: #C9A84C;
+    border-color: #C9A84C;
+    background-color: rgba(201, 168, 76, 0.05);
+}
+
+.border-gold {
+    border-color: #C9A84C !important;
+}
+
+/* Cartões do Grid */
+.blog-card {
+    background-color: #14110F;
+    border: 1px solid rgba(201, 168, 76, 0.15);
+    height: 100%;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    background-color: #1C1917;
+    border-color: #C9A84C;
+    transform: translateY(-5px);
+}
+
+.card-img-placeholder {
+    background-color: #0F0D0B;
+    height: 180px;
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.card-corpo {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.titulo-card-artigo {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F5EDD6;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.texto-card-artigo {
+    color: #8F8376;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.btn-ler-mais-card {
+    font-family: 'Jost', sans-serif;
+    color: #C8B99A;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-ler-mais-card:hover {
+    color: #C9A84C;
+}
+
+/* --- SISTEMA DE ANIMAÇÃO SCROLL --- */
+.animar-scroll {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.7s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                transform 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.animar-scroll.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.12s; }
+.delay-2 { transition-delay: 0.24s; }
+
+/* Rodapé */
+.bg-footer { background: #0F0D0B; }
+.titulo-footer { color: #8A6F2E; font-family: 'Cormorant Garamond', serif; }
+.text-secondary-custom { color: #7A6E62; font-family: 'Jost', serif; }
+.text-decoration-none:hover { color: #8A6F2E; }
