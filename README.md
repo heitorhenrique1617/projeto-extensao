@@ -6,7 +6,7 @@
 
 ## 📌 Sobre o Projeto
 
-O **Museu Virtual do Balé** é um site educativo e cultural desenvolvido como projeto de extensão universitária, em parceria com a **Escola de Balé Karina Rezende** (Londrina – PR).
+O **Museu Virtual do Ballet** é um site educativo e cultural desenvolvido como projeto de extensão universitária, em parceria com a **Escola de Balé Karina Rezende** (Londrina – PR).
 
 O objetivo é democratizar o acesso à história e à cultura do balé clássico, reunindo em um único espaço virtual exposições, galeria multimídia, glossário de termos técnicos e conteúdo editorial — tornando essa arte acessível a qualquer pessoa com acesso à internet.
 
