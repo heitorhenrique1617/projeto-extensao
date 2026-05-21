@@ -10,7 +10,6 @@
 </head>
 <body>
 
-
     <!-- Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container">
@@ -28,7 +27,7 @@
         </div>
     </nav>
 
-    <!-- Seção Inicial -->
+    <!-- Blog -->
     <section id="blog-intro" class="py-5 bg-blog-introducao text-start d-flex align-items-center">
         <div class="container py-1">
             <p class="texto-introducao lead text-start mb-2 fs-6 mx-auto">Bastidores & Ensaios</p>
@@ -37,19 +36,19 @@
         </div>
     </section>
 
-    <!-- Conteúdo do Blog Destaque -->
     <section id="blog-conteudo" class="py-5 bg-blog-principal">
         <div class="container py-4">
             
             <div class="row mb-5 g-4 align-items-center animar-scroll">
                 <div class="col-lg-6">
-                    <div class="img-destaque-placeholder d-flex align-items-center justify-content-center">
-                        <span class="texto-placeholder">🩰 Imagem de Capa</span>
+                    <div class="img-destaque-placeholder d-flex align-items-center justify-content-center" style="background-image: url('https://images.unsplash.com/photo-1516477287754-5a7a1470ce23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+                        <span class="texto-placeholder" style="background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px;">🩰 Em Cena</span>
                     </div>
                 </div>
+                <!-- Destaque -->
                 <div class="col-lg-6 ps-lg-5">
-                    <span class="blog-tag text-uppercase mb-2 d-inline-block">ENTREVISTA</span>
-                    <h2 class="titulo-artigo-destaque display-5 mb-3">De Londrina para os palcos de New York: A jornada de xxxx</h2>
+                    <span class="blog-tag text-uppercase mb-2 d-inline-block">ENTREVISTAS</span>
+                    <h2 class="titulo-artigo-destaque display-5 mb-3">De Londrina para os palcos de New York: A jornada de Ana Rosa</h2>
                     <p class="desc-texto mb-4">O balé exige uma entrega que assusta no começo, mas cruzar o oceano me mostrou que a nossa dança tem uma alma única. <br> Descubra como a disciplina da Escola Bolshoi preparou Ana para enfrentar as rigorosas audições europeias, o choque cultural dos primeiros meses na Alemanha e o conselho que ela deixa para a nova geração de bailarinos brasileiros.</p>
                     <div class="meta-texto mb-4">Por Heitor Henrique &middot; 19 de Maio, 2026</div>
                     <a href="post.html" class="btn-ler-mais">LER ARTIGO &rarr;</a>
@@ -58,19 +57,20 @@
 
             <hr class="border-gold my-5 opacity-25">
 
-            <!-- Navegação Tags -->
-            <div class="d-flex gap-3 flex-wrap mb-5 animar-scroll">
-                <a href="#" class="filtro-tag ativo">Todos</a>
-                <a href="#" class="filtro-tag">História</a>
-                <a href="#" class="filtro-tag">Bastidores</a>
-                <a href="#" class="filtro-tag">Críticas</a>
-                <a href="#" class="filtro-tag">Entrevistas</a>
+            <!-- Categorias -->
+            <div class="d-flex gap-3 flex-wrap mb-5 animar-scroll" id="filtros-container">
+                <a href="#" class="filtro-tag ativo" data-filter="todos">Todos</a>
+                <a href="#" class="filtro-tag" data-filter="historia">História</a>
+                <a href="#" class="filtro-tag" data-filter="bastidores">Bastidores</a>
+                <a href="#" class="filtro-tag" data-filter="criticas">Críticas</a>
+                <a href="#" class="filtro-tag" data-filter="entrevistas">Entrevistas</a>
+                <a href="#" class="filtro-tag" data-filter="tecnica">Técnica</a> 
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4" id="grid-artigos">
                 
-                <!-- Conteúdo Blog -->
-                <div class="col-md-4 animar-scroll">
+                <!-- Blogs -->
+                <div class="col-md-4 animar-scroll item-artigo" data-category="bastidores">
                     <div class="blog-card">
                         <div class="card-img-placeholder d-flex align-items-center justify-content-center">
                             <span>🎭</span>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 animar-scroll delay-1">
+                <div class="col-md-4 animar-scroll delay-1 item-artigo" data-category="criticas">
                     <div class="blog-card">
                         <div class="card-img-placeholder d-flex align-items-center justify-content-center">
                             <span>🎵</span>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 animar-scroll delay-2">
+                <div class="col-md-4 animar-scroll delay-2 item-artigo" data-category="historia">
                     <div class="blog-card">
                         <div class="card-img-placeholder d-flex align-items-center justify-content-center">
                             <span>🇧🇷</span>
@@ -112,10 +112,39 @@
                     </div>
                 </div>
 
+                <div class="col-md-4 animar-scroll item-artigo" data-category="entrevistas">
+                    <div class="blog-card">
+                        <div class="card-img-placeholder d-flex align-items-center justify-content-center">
+                            <span>🎙️</span>
+                        </div>
+                        <div class="card-corpo">
+                            <span class="blog-tag text-uppercase mb-2 d-inline-block">Entrevistas</span>
+                            <h3 class="titulo-card-artigo">Diálogos com o Coreógrafo: A mente por trás de 'O Lago dos Cisnes'</h3>
+                            <p class="texto-card-artigo">Uma conversa exclusiva sobre a reinterpretação de clássicos para o público do século XXI.</p>
+                            <a href="#" class="btn-ler-mais-card">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 animar-scroll delay-1 item-artigo" data-category="historia">
+                    <div class="blog-card">
+                        <div class="card-img-placeholder d-flex align-items-center justify-content-center">
+                            <span>📜</span>
+                        </div>
+                        <div class="card-corpo">
+                            <span class="blog-tag text-uppercase mb-2 d-inline-block">História</span>
+                            <h3 class="titulo-card-artigo">A evolução dos figurinos de balé</h3>
+                            <p class="texto-card-artigo">Dos corsets pesados e saias longas do Romantismo aos tutus estruturados projetados para libertar os movimentos.</p>
+                            <a href="#" class="btn-ler-mais-card">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- Rodapé -->
     <footer class="bg-footer text-light py-5">
         <div class="container">
             <div class="row">
@@ -149,6 +178,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function () {
+        // ---  Sistema de Animação de Scroll ---
         const observador = new IntersectionObserver((entradas) => {
             entradas.forEach((entrada) => {
                 if (entrada.isIntersecting) {
@@ -163,6 +193,42 @@
 
         document.querySelectorAll(".animar-scroll").forEach((elemento) => {
             observador.observe(elemento);
+        });
+
+        // --- Sistema de Filtro de Categorias ---
+        const filtros = document.querySelectorAll('.filtro-tag');
+        const artigos = document.querySelectorAll('.item-artigo');
+
+        filtros.forEach(filtro => {
+            filtro.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Remove a classe 'ativo' de todos os filtros e adiciona apenas no que foi clicado
+                filtros.forEach(f => f.classList.remove('ativo'));
+                this.classList.add('ativo');
+
+                // Pega o valor da categoria escolhida
+                const categoriaSelecionada = this.getAttribute('data-filter');
+
+                // Percorre todos os artigos
+                artigos.forEach(artigo => {
+                    const categoriaArtigo = artigo.getAttribute('data-category');
+
+                    // Se escolheu 'todos' ou a categoria do artigo bate com a escolhida, mostra o artigo
+                    if (categoriaSelecionada === 'todos' || categoriaSelecionada === categoriaArtigo) {
+                        artigo.classList.remove('d-none');
+                        
+                        // Pequeno truque para forçar a animação rodar novamente se o item já estava carregado
+                        setTimeout(() => {
+                            artigo.classList.add('ativo');
+                        }, 50);
+                    } else {
+                        // Se não for da categoria, esconde o artigo com a classe d-none do Bootstrap
+                        artigo.classList.add('d-none');
+                        artigo.classList.remove('ativo');
+                    }
+                });
+            });
         });
     });
     </script>
