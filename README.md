@@ -12,6 +12,12 @@ O objetivo é democratizar o acesso à história e à cultura do balé clássico
 
 ---
 
+## 🌐 Acesse o Projeto
+
+🔗 [Clique aqui para visualizar o site](https://heitorhenrique1617.github.io/projeto-extensao/index.html)
+
+---
+
 ## ✨ Funcionalidades
 
 - **Exposições Virtuais** — navegação por eras históricas do balé (Renascimento, Era Romântica, Era Imperial Russa, Ballets Russes e contemporâneo)
