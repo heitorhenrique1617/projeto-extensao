@@ -1,103 +1,31 @@
-/* Menu */
-.navbar-custom {
-    background: #0F0D0B;
-    backdrop-filter: blur(10px);
-    padding: 15px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.navbar-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #C9A84C;
-    margin-left: 15px;
-    transition: 0.3s;
-}
-
-.navbar-brand:hover {
-    color: #8A6F2E !important;
-}
-
-.nav-link {
-    color: #7A6E62;
-    font-family: 'Jost', serif;
-    margin-left: 15px;
-    transition: 0.3s;
-}
-
-.nav-link:hover {
-    color: #8A6F2E !important;
-}
-
-.navbar-toggler {
-    border-color: #C9A84C; 
-    border-width: 2px;    
-    padding: 5px;          
-}
-
-.navbar-toggler-icon {
-    filter: invert(72%) sepia(50%) saturate(450%) hue-rotate(5deg) brightness(95%) contrast(90%);
-}
-
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0.25rem rgba(201, 168, 76, 0.25); 
-}
-
-/* ------------------------------
-Inicio - Museu
---------------------------------- */
-
-/* Seção Inicial */
 .bg-custom-introducao {
-    background-color: #1C1917;
+    background-color: var(--bg-dark-hero);
     background-size: cover;
     background-position: center;
     min-height: 20vh; 
 }
 
 .texto-introducao {
-    font-family: 'Jost', serif;
-    color: #C9A84C;
+    font-family: var(--font-sans);
+    color: var(--color-gold);
 }
 
 .titulo-introducao {
-    font-family: 'Cormorant Garamond', serif;
-    color: #F5EDD6;
+    font-family: var(--font-serif);
+    color: var(--text-light-cream);
 }
 
 .texto-principal {
-    font-family: 'Jost', serif;
-    color: #C8B99A;
+    font-family: var(--font-sans);
+    color: var(--text-muted-gold);
 }
 
-/* --- FUNDO DO MUSEU --- */
 .bg-custom-museu {
-    background-color: #1C1917; 
+    background-color: var(--bg-dark-hero); 
     min-height: 100vh;
 }
 
-/* --- CLASSE CORINGA PARA DETECÇÃO DE SCROLL --- */
-.animar-scroll {
-    opacity: 0;
-    transform: translateY(35px);
-    transition: opacity 0.7s cubic-bezier(0.215, 0.610, 0.355, 1), 
-                transform 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-
-/* Estado ativo injetado pelo JavaScript */
-.animar-scroll.ativo {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Controles de atraso (Stagger) para efeito cascata */
-.delay-1 { transition-delay: 0.12s; }
-.delay-2 { transition-delay: 0.24s; }
-.delay-3 { transition-delay: 0.36s; }
-.delay-4 { transition-delay: 0.48s; }
-
-/* --- LINHA VERTICAL --- */
+/* --- LINHA VERTICAL TIMELINE --- */
 .timeline-bar {
     position: absolute;
     top: 14px; 
@@ -107,8 +35,6 @@ Inicio - Museu
     width: 1px;
     background-color: rgba(201, 168, 76, 0.4);
     z-index: 1;
-    
-    /* Configuração suave para a linha surgir esticando */
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
@@ -117,65 +43,62 @@ Inicio - Museu
     opacity: 1;
 }
 
-/* --- MARCADOR (BOLINHA DOURADA COM GLOW) --- */
 .ponto-marcador {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #C9A84C;
+    background-color: var(--color-gold);
     z-index: 2;
     margin-top: 5px; 
     box-shadow: 0 0 15px rgba(201, 168, 76, 0.8);
 }
 
-/* --- TEXTOS DA TIMELINE --- */
 .seculo-texto {
-    font-family: 'Cormorant Garamond', serif;
-    color: #C9A84C;
+    font-family: var(--font-serif);
+    color: var(--color-gold);
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .sub-texto {
-    font-family: 'Jost', sans-serif;
-    color: #7A6E62;
+    font-family: var(--font-sans);
+    color: var(--text-muted-gray);
     font-size: 0.7rem;
     letter-spacing: 3px;
 }
 
 .titulo-periodo {
-    font-family: 'Cormorant Garamond', serif !important;
-    color: #F5EDD6; 
+    font-family: var(--font-serif) !important;
+    color: var(--text-light-cream); 
     font-weight: 400;
 }
 
 .desc-texto {
-    font-family: 'Jost', sans-serif;
-    color: #C8B99A; 
+    font-family: var(--font-sans);
+    color: var(--text-muted-gold); 
     font-size: 1.05rem;
     line-height: 1.7; 
     max-width: 800px;
 }
 
-/* Deixa as palavras em itálico com uma cor levemente diferente */
 .desc-texto em {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-serif);
     font-style: italic;
     font-size: 1.15rem;
-    color: #F5EDD6;
+    color: var(--text-light-cream);
 }
 
 .desc-texto strong {
-    color: #C8B99A;
+    color: var(--text-muted-gold);
     font-weight: 600;
 }
 
 .frase-destaque {
     background: rgba(255, 255, 255, 0.03);
-    border-left: 3px solid #C9A84C;
+    border-left: 3px solid var(--color-gold);
     padding: 25px 30px;
-    color: #D8C7A5;
-    font-family: 'Jost', sans-serif;
+    color: var(--text-quote);
+    font-family: var(--font-sans);
     font-size: 1.1rem;
     line-height: 2;
     font-style: italic;
@@ -185,21 +108,17 @@ Inicio - Museu
 .obra-tag {
     display: inline-block;
     padding: 10px 18px;
-    border: 1px solid #C9A84C;
+    border: 1px solid var(--color-gold);
     border-radius: 999px;
-    color: #C9A84C;
-    font-family: 'Jost', sans-serif;
+    color: var(--color-gold);
+    font-family: var(--font-sans);
     font-size: 0.9rem;
     background-color: transparent;
 }
 
-/* ----------------
-Glossário
-------------------*/
+/* --- GLOSSÁRIO --- */
 .bg-custom-glossario {
-    background-color: #27231E;
-    background-size: cover;
-    background-position: center;
+    background-color: var(--bg-dark-principal);
     min-height: 100vh; 
     display: flex;
     align-items: center;
@@ -207,7 +126,7 @@ Glossário
 }
 
 .movimento-card {
-    background-color: #14110F; /* Corrigido de volta para o tom escuro para contrastar com o fundo externo */
+    background-color: var(--bg-card); 
     border: 1px solid rgba(201, 168, 76, 0.15);
     padding: 40px;
     height: 100%;
@@ -215,52 +134,27 @@ Glossário
 }
 
 .movimento-card:hover {
-    background-color: #1C1917;
-    border-color: #C9A84C;
+    background-color: var(--bg-dark-hero);
+    border-color: var(--color-gold);
 }
 
 .movimento-titulo {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-serif);
     font-size: 2.2rem;
-    color: #F5EDD6;
+    color: var(--text-light-cream);
     margin-bottom: 20px;
 }
 
 .movimento-subtitulo {
-    color: #C9A84C;
-    font-family: 'Jost', sans-serif;
+    color: var(--color-gold);
+    font-family: var(--font-sans);
     font-size: 0.9rem;
     margin-bottom: 20px;
 }
 
 .movimento-texto {
-    color: #8F8376;
-    font-family: 'Jost', sans-serif;
+    color: var(--text-card-desc);
+    font-family: var(--font-sans);
     line-height: 2;
     max-width: 300px;
-}
-
-/* ---------------------------------
-Rodapé
----------------------------------*/
-.bg-footer {
-    background: #0F0D0B;
-}
-
-.titulo-footer {
-    color: #8A6F2E;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-.text-secondary-custom {
-    color: #7A6E62;
-    font-family: 'Jost', serif;
-}
-
-.text-decoration-none {
-    transition: all 0.3s;
-}
-
-.text-decoration-none:hover {
-    color: #8A6F2E;
 }

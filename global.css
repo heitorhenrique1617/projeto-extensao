@@ -1,0 +1,116 @@
+/* ==========================================================================
+   VARIÁVEIS GLOBAIS (DESIGN SYSTEM)
+   ========================================================================== */
+:root {
+    /* Paleta de Cores */
+    --bg-dark-pure: #0F0D0B;
+    --bg-dark-hero: #1C1917;
+    --bg-dark-principal: #27231E;
+    --bg-card: #14110F;
+    
+    --color-gold: #C9A84C;
+    --color-gold-dark: #8A6F2E;
+    
+    --text-light-cream: #F5EDD6;
+    --text-muted-gold: #C8B99A;
+    --text-muted-gray: #7A6E62;
+    --text-card-desc: #8F8376;
+    --text-quote: #D8C7A5;
+
+    /* Tipografia */
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Jost', sans-serif;
+}
+
+/* ==========================================================================
+   MENU DE NAVEGAÇÃO (NAVBAR)
+   ========================================================================== */
+.navbar-custom {
+    background: var(--bg-dark-pure);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-gold);
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    color: var(--color-gold-dark) !important;
+}
+
+.nav-link {
+    color: var(--text-muted-gray);
+    font-family: var(--font-sans);
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--color-gold-dark) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--color-gold); 
+    border-width: 2px;    
+    padding: 5px;          
+}
+
+.navbar-toggler-icon {
+    filter: invert(72%) sepia(50%) saturate(450%) hue-rotate(5deg) brightness(95%) contrast(90%);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(201, 168, 76, 0.25); 
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+.bg-footer { 
+    background: var(--bg-dark-pure); 
+}
+
+.titulo-footer { 
+    color: var(--color-gold-dark); 
+    font-family: var(--font-serif); 
+}
+
+.text-secondary-custom { 
+    color: var(--text-muted-gray); 
+    font-family: var(--font-sans); 
+}
+
+.text-decoration-none {
+    transition: all 0.3s;
+}
+
+.text-decoration-none:hover {
+    color: var(--color-gold-dark);
+}
+
+/* ==========================================================================
+   SISTEMA DE ANIMAÇÃO SCROLL
+   ========================================================================== */
+.animar-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                transform 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.animar-scroll.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.12s; }
+.delay-2 { transition-delay: 0.24s; }
+.delay-3 { transition-delay: 0.36s; }
+.delay-4 { transition-delay: 0.48s; }

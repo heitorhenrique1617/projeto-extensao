@@ -1,94 +1,49 @@
-/* --- MENU --- */
-.navbar-custom {
-    background: #0F0D0B;
-    backdrop-filter: blur(10px);
-    padding: 15px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.navbar-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #C9A84C;
-    margin-left: 15px;
-    transition: 0.3s;
-}
-
-.nav-link {
-    color: #7A6E62;
-    font-family: 'Jost', serif;
-    margin-left: 15px;
-}
-
-.navbar-toggler {
-    border-color: #C9A84C; 
-    border-width: 2px;    
-    padding: 5px;          
-}
-
-.navbar-toggler-icon {
-    filter: invert(72%) sepia(50%) saturate(450%) hue-rotate(5deg) brightness(95%) contrast(90%);
-}
-
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0.25rem rgba(201, 168, 76, 0.25); 
-}
-
-/* --- FUNDO DAS SEÇÕES --- */
-
 .bg-post-hero {
-    background-color: #1C1917;
+    background-color: var(--bg-dark-hero);
     border-bottom: 1px solid rgba(201, 168, 76, 0.1);
 }
 
 .bg-blog-principal {
-    background-color: #27231E;
-
-    
+    background-color: var(--bg-dark-principal);
 }
 
-/* --- DESIGN TIPOGRÁFICO DO ARTIGO --- */
-
-/* Limita o tamanho horizontal da linha para cansar menos a vista */
 .leitura-otimizada {
     max-width: 740px !important;
 }
 
 .titulo-post {
-    font-family: 'Cormorant Garamond', serif;
-    color: #F5EDD6;
+    font-family: var(--font-serif);
+    color: var(--text-light-cream);
 }
 
 .subtitulo-post {
-    font-family: 'Jost', sans-serif;
-    color: #C8B99A;
+    font-family: var(--font-sans);
+    color: var(--text-muted-gold);
     line-height: 1.6;
 }
 
 .blog-tag {
-    color: #C9A84C;
-    font-family: 'Jost', sans-serif;
+    color: var(--color-gold);
+    font-family: var(--font-sans);
     font-size: 0.75rem;
     letter-spacing: 2px;
 }
 
 .meta-texto {
-    font-family: 'Jost', sans-serif;
-    color: #7A6E62;
+    font-family: var(--font-sans);
+    color: var(--text-muted-gray);
     font-size: 0.9rem;
 }
 
 .intro-artigo {
-    font-family: 'Jost', sans-serif;
-    color: #C8B99A;
+    font-family: var(--font-sans);
+    color: var(--text-muted-gold);
     line-height: 1.8;
 }
 
-/* Títulos das 3 Categorias Internas */
 .titulo-categoria-post {
-    font-family: 'Cormorant Garamond', serif;
-    color: #C9A84C;
+    font-family: var(--font-serif);
+    color: var(--color-gold);
     font-size: 1.8rem;
     font-weight: 400;
     border-bottom: 1px solid rgba(201, 168, 76, 0.2);
@@ -96,10 +51,9 @@
     margin-top: 40px;
 }
 
-/* Estilo de Q&A (Perguntas e Respostas) */
 .pergunta {
-    font-family: 'Jost', sans-serif;
-    color: #F5EDD6;
+    font-family: var(--font-sans);
+    color: var(--text-light-cream);
     font-weight: 500;
     font-size: 1.1rem;
     margin-top: 30px;
@@ -108,8 +62,8 @@
 }
 
 .resposta {
-    font-family: 'Jost', sans-serif;
-    color: #8F8376;
+    font-family: var(--font-sans);
+    color: var(--text-card-desc);
     font-size: 1.05rem;
     line-height: 1.8;
     margin-bottom: 30px;
@@ -117,48 +71,29 @@
     border-left: 1px solid rgba(143, 131, 118, 0.2); 
 }
 
-/* Caixa de Citação/Destaque */
 .frase-destaque {
     background: rgba(255, 255, 255, 0.02);
-    border-left: 3px solid #C9A84C;
+    border-left: 3px solid var(--color-gold);
     padding: 30px;
-    color: #D8C7A5;
-    font-family: 'Jost', sans-serif;
+    color: var(--text-quote);
+    font-family: var(--font-sans);
     font-size: 1.2rem;
     line-height: 1.8;
     font-style: italic;
 }
 
-/* Links Inferiores */
 .border-gold {
     border-color: rgba(201, 168, 76, 0.2) !important;
 }
 
 .link-navegacao {
-    font-family: 'Jost', sans-serif;
-    color: #C9A84C;
+    font-family: var(--font-sans);
+    color: var(--color-gold);
     text-decoration: none;
     font-size: 0.95rem;
     transition: 0.3s;
 }
 
 .link-navegacao:hover {
-    color: #F5EDD6;
+    color: var(--text-light-cream);
 }
-
-/* --- ANIMAÇÃO SCROLL --- */
-.animar-scroll {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.animar-scroll.ativo {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Rodapé */
-.bg-footer { background: #0F0D0B; }
-.titulo-footer { color: #8A6F2E; font-family: 'Cormorant Garamond', serif; }
-.text-secondary-custom { color: #7A6E62; font-family: 'Jost', serif; }
