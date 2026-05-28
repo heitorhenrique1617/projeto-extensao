@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
     <title>En Pointe - Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Crônicas da dança: artigos, reflexões e entrevistas exclusivas com bailarinas brasileiras que construíram carreira no exterior.">
+    <meta name="author" content="Heitor Henrique">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon">
+
+    <!-- Otimização de Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="blog-style.css">
 </head>
 <body>
 
+    <!-- Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="index.html">En Pointe - Museu Virtual do Ballet</a>
@@ -28,11 +41,12 @@
     </nav>
 
     <main>
+        <!-- Blog -->
         <section id="blog-intro" class="py-5 bg-blog-introducao text-start d-flex align-items-center">
             <div class="container py-1">
                 <p class="texto-introducao lead text-start mb-2 fs-6 mx-auto">Bastidores & Ensaios</p>
                 <h1 class="titulo-introducao display-3 fw-bold mb-4">Crônicas da Dança</h1>
-                <p class="texto-principal lead text-start mb-1 fs-6 mx-auto">Artigos, reflexões, interviews e narrativas que aprofundam a nossa conexão com o universo do balé.</p>
+                <p class="texto-principal lead text-start mb-1 fs-6 mx-auto">Artigos, reflexões, entrevistas e narrativas que aprofundam a nossa conexão com o universo do balé.</p>
             </div>
         </section>
 
@@ -41,10 +55,13 @@
                 
                 <div class="row mb-5 g-4 align-items-center animar-scroll">
                     <div class="col-lg-6">
+                        <!-- Imagem do Destaque do Blog -->
                         <div class="img-destaque-placeholder d-flex align-items-center justify-content-center" style="background-image: url('https://images.unsplash.com/photo-1516477287754-5a7a1470ce23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
                             <span class="texto-placeholder" style="background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px;">🩰 Em Cena</span>
                         </div>
+                        <!-- *Dica: Se futuramente trocar o style background por uma tag <img> padrão, lembre-se de adicionar o atributo loading="lazy" para melhorar a performance. -->
                     </div>
+                    <!-- Destaque -->
                     <div class="col-lg-6 ps-lg-5">
                         <span class="blog-tag text-uppercase mb-2 d-inline-block">ENTREVISTAS</span>
                         <h2 class="titulo-artigo-destaque display-5 mb-3">De Londrina para os palcos de New York: A jornada de Ana Rosa</h2>
@@ -56,6 +73,7 @@
 
                 <hr class="border-gold my-5 opacity-25">
 
+                <!-- Categorias -->
                 <div class="d-flex gap-3 flex-wrap mb-5 animar-scroll" id="filtros-container">
                     <a href="#" class="filtro-tag ativo" data-filter="todos">Todos</a>
                     <a href="#" class="filtro-tag" data-filter="historia">História</a>
@@ -67,6 +85,7 @@
 
                 <div class="row g-4" id="grid-artigos">
                     
+                    <!-- Blogs -->
                     <div class="col-md-4 animar-scroll item-artigo" data-category="bastidores">
                         <div class="blog-card">
                             <div class="card-img-placeholder d-flex align-items-center justify-content-center">
@@ -142,6 +161,7 @@
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="bg-footer text-light py-5">
         <div class="container">
             <div class="row">
