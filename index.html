@@ -38,6 +38,7 @@
                     <a class="nav-link" href="museu.html">Museu</a>
                     <a class="nav-link" href="blog.html">Blog</a>
                     <a class="nav-link" href="sobre.html">Sobre</a>
+                    <a id="theme-toggle" class="nav-link" href="#" role="button">Tema</a>
                 </div>
             </div>
         </div>
@@ -121,5 +122,50 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    
+    // 1. Verifica se já existe um tema salvo para ESTA ABA (sessão)
+    let currentSessionTheme = sessionStorage.getItem('theme-session');
+    
+    // 2. Se não houver nada salvo, detecta o padrão do dispositivo
+    if (!currentSessionTheme) {
+        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        currentSessionTheme = prefersLight ? 'light' : 'dark';
+    }
+    
+    // 3. Aplica o tema imediatamente
+    document.documentElement.setAttribute('data-theme', currentSessionTheme);
+
+    // 4. Se o usuário já tiver clicado antes nesta sessão, ajusta o texto para "Claro" ou "Escuro"
+    if (sessionStorage.getItem('theme-session') && themeToggleBtn) {
+        themeToggleBtn.textContent = currentSessionTheme === 'dark' ? 'Escuro' : 'Claro';
+    }
+
+    // 5. Escuta o clique para alternar o tema e o texto
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Evita que o href="#" mude a URL ou role a tela
+            
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            // Aplica o novo tema e salva na sessão da aba
+            document.documentElement.setAttribute('data-theme', newTheme);
+            sessionStorage.setItem('theme-session', newTheme);
+            
+            // Muda o texto conforme o tema ativado
+            themeToggleBtn.textContent = newTheme === 'dark' ? 'Escuro' : 'Claro';
+        });
+    }
+});
+
+    </script>
+
+
+
 </body>
 </html>

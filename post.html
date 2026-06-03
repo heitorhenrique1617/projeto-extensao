@@ -34,6 +34,7 @@
                     <a class="nav-link" href="museu.html">Museu</a>
                     <a class="nav-link" href="blog.html">Blog</a>
                     <a class="nav-link" href="sobre.html">Sobre</a>
+                    <a id="theme-toggle" class="nav-link" href="#" role="button">Tema</a>
                 </div>
             </div>
         </div>
@@ -156,6 +157,40 @@
             observador.observe(elemento);
         });
     });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    
+
+    let currentSessionTheme = sessionStorage.getItem('theme-session');
+    
+
+    if (!currentSessionTheme) {
+        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        currentSessionTheme = prefersLight ? 'light' : 'dark';
+    }
+    
+    document.documentElement.setAttribute('data-theme', currentSessionTheme);
+
+    if (sessionStorage.getItem('theme-session') && themeToggleBtn) {
+        themeToggleBtn.textContent = currentSessionTheme === 'dark' ? 'Escuro' : 'Claro';
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            sessionStorage.setItem('theme-session', newTheme);
+            
+            themeToggleBtn.textContent = newTheme === 'dark' ? 'Escuro' : 'Claro';
+        });
+    }
+});
+
     </script>
 </body>
 </html>

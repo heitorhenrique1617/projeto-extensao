@@ -1,11 +1,13 @@
 .bg-blog-introducao {
-    background-color: var(--bg-dark-hero);
+    background-color: var(--bg-hero);
     min-height: 20vh; 
+    transition: background-color 0.3s;
 }
 
 .bg-blog-principal {
-    background-color: var(--bg-dark-principal); 
+    background-color: var(--bg-principal); 
     min-height: 100vh;
+    transition: background-color 0.3s;
 }
 
 .texto-introducao {
@@ -15,36 +17,37 @@
 
 .titulo-introducao {
     font-family: var(--font-serif);
-    color: var(--text-light-cream);
+    color: var(--text-title);
 }
 
 .texto-principal {
     font-family: var(--font-sans);
-    color: var(--text-muted-gold);
+    color: var(--text-body);
 }
 
 .img-destaque-placeholder {
     background-color: var(--bg-card);
-    border: 1px solid rgba(201, 168, 76, 0.2);
+    border: 1px solid var(--border-subtle);
     height: 350px;
-    color: var(--text-muted-gray);
+    color: var(--text-muted);
     font-family: var(--font-sans);
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .titulo-artigo-destaque {
     font-family: var(--font-serif);
-    color: var(--text-light-cream);
+    color: var(--text-title);
 }
 
 .desc-texto {
     font-family: var(--font-sans);
-    color: var(--text-muted-gold); 
+    color: var(--text-body); 
     line-height: 1.7;
 }
 
 .meta-texto {
     font-family: var(--font-sans);
-    color: var(--text-muted-gray);
+    color: var(--text-muted);
     font-size: 0.9rem;
 }
 
@@ -58,7 +61,7 @@
 }
 
 .btn-ler-mais:hover {
-    color: var(--text-light-cream);
+    color: var(--text-title);
     padding-left: 5px;
 }
 
@@ -67,15 +70,15 @@
     font-family: var(--font-sans);
     font-size: 0.75rem;
     letter-spacing: 2px;
-    border-bottom: 1px solid rgba(201, 168, 76, 0.4);
+    border-bottom: 1px solid var(--border-medium);
     padding-bottom: 2px;
 }
 
 .filtro-tag {
     font-family: var(--font-sans);
-    color: var(--text-muted-gray);
+    color: var(--text-muted);
     text-decoration: none;
-    border: 1px solid rgba(122, 110, 98, 0.3);
+    border: 1px solid var(--border-gray);
     padding: 6px 16px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -85,7 +88,7 @@
 .filtro-tag:hover, .filtro-tag.ativo {
     color: var(--color-gold);
     border-color: var(--color-gold);
-    background-color: rgba(201, 168, 76, 0.05);
+    background-color: var(--bg-hover-gold);
 }
 
 .border-gold {
@@ -94,7 +97,7 @@
 
 .blog-card {
     background-color: var(--bg-card);
-    border: 1px solid rgba(201, 168, 76, 0.15);
+    border: 1px solid var(--border-subtle);
     height: 100%;
     transition: 0.3s;
     display: flex;
@@ -102,16 +105,17 @@
 }
 
 .blog-card:hover {
-    background-color: var(--bg-dark-hero);
+    background-color: var(--bg-hero);
     border-color: var(--color-gold);
     transform: translateY(-5px);
 }
 
 .card-img-placeholder {
-    background-color: var(--bg-dark-pure);
+    background-color: var(--bg-pure);
     height: 180px;
     font-size: 2rem;
-    border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+    border-bottom: 1px solid var(--border-subtle);
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .card-corpo {
@@ -123,14 +127,14 @@
 
 .titulo-card-artigo {
     font-family: var(--font-serif);
-    color: var(--text-light-cream);
+    color: var(--text-title);
     font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 .texto-card-artigo {
-    color: var(--text-card-desc);
+    color: var(--text-desc);
     font-family: var(--font-sans);
     font-size: 0.95rem;
     line-height: 1.6;
@@ -140,7 +144,7 @@
 
 .btn-ler-mais-card {
     font-family: var(--font-sans);
-    color: var(--text-muted-gold);
+    color: var(--text-body);
     text-decoration: none;
     font-size: 0.9rem;
     transition: 0.3s;

@@ -2,20 +2,29 @@
    VARIÁVEIS GLOBAIS (DESIGN SYSTEM)
    ========================================================================== */
 :root {
-    /* Paleta de Cores */
-    --bg-dark-pure: #0F0D0B;
-    --bg-dark-hero: #1C1917;
-    --bg-dark-principal: #27231E;
+    /* Paleta de Cores Escura (Padrão) */
+    --bg-pure: #0F0D0B;
+    --bg-hero: #1C1917;
+    --bg-principal: #27231E;
     --bg-card: #14110F;
+    --bg-quote: rgba(255, 255, 255, 0.03);
+    --bg-hover-gold: rgba(201, 168, 76, 0.05);
     
     --color-gold: #C9A84C;
     --color-gold-dark: #8A6F2E;
+    --color-gold-glow: rgba(201, 168, 76, 0.3);
     
-    --text-light-cream: #F5EDD6;
-    --text-muted-gold: #C8B99A;
-    --text-muted-gray: #7A6E62;
-    --text-card-desc: #8F8376;
+    --text-title: #F5EDD6;
+    --text-body: #C8B99A;
+    --text-muted: #7A6E62;
+    --text-desc: #8F8376;
     --text-quote: #D8C7A5;
+
+    /* Variáveis Auxiliares (Bordas e Sombras) */
+    --border-subtle: rgba(201, 168, 76, 0.15);
+    --border-medium: rgba(201, 168, 76, 0.4);
+    --border-gray: rgba(122, 110, 98, 0.3);
+    --shadow-nav: rgba(0,0,0,0.3);
 
     /* Tipografia */
     --font-serif: 'Cormorant Garamond', serif;
@@ -23,13 +32,41 @@
 }
 
 /* ==========================================================================
+   TEMA CLARO (Classic Ivory & Gold)
+   ========================================================================== */
+[data-theme="light"] {
+    --bg-pure: #F4F1EC;
+    --bg-hero: #FFFFFF;
+    --bg-principal: #ECEAE4;
+    --bg-card: #FFFFFF;
+    --bg-quote: rgba(0, 0, 0, 0.03);
+    --bg-hover-gold: rgba(184, 147, 51, 0.08);
+    --color-gold: #B89333;
+    --color-gold-dark: #8A6F2E;
+    --color-gold-glow: rgba(184, 147, 51, 0.15);
+    --text-title: #1E2633;
+    --text-body: #3D4755;
+    --text-muted: #7A8394;
+    --text-desc: #596070;
+    --text-quote: #4A5568;
+    --border-subtle: rgba(184, 147, 51, 0.2);
+    --border-medium: rgba(184, 147, 51, 0.45);
+    --border-gray: rgba(90, 100, 115, 0.25);
+    --shadow-nav: rgba(0,0,0,0.22);
+    /* navbar */ 
+    --navbar-bg: #2F3640;
+    --navbar-text: #F0ECE4;
+}
+
+/* ==========================================================================
    MENU DE NAVEGAÇÃO (NAVBAR)
    ========================================================================== */
 .navbar-custom {
-    background: var(--bg-dark-pure);
+    background: var(--navbar-bg, var(--bg-pure));
     backdrop-filter: blur(10px);
     padding: 15px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px var(--shadow-nav);
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .navbar-brand {
@@ -46,7 +83,7 @@
 }
 
 .nav-link {
-    color: var(--text-muted-gray);
+    color: var(--text-muted);
     font-family: var(--font-sans);
     margin-left: 15px;
     transition: 0.3s;
@@ -67,14 +104,23 @@
 }
 
 .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.25rem rgba(201, 168, 76, 0.25); 
+    box-shadow: 0 0 0 0.25rem var(--color-gold-glow); 
+}
+
+#theme-toggle {
+    transition: transform 0.3s;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.01);
 }
 
 /* ==========================================================================
    RODAPÉ (FOOTER)
    ========================================================================== */
 .bg-footer { 
-    background: var(--bg-dark-pure); 
+    background: var(--navbar-bg, var(--bg-pure)); 
+    transition: background 0.3s;
 }
 
 .titulo-footer { 
@@ -83,7 +129,7 @@
 }
 
 .text-secondary-custom { 
-    color: var(--text-muted-gray); 
+    color: var(--text-muted); 
     font-family: var(--font-sans); 
 }
 

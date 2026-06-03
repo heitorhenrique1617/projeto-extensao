@@ -1,12 +1,14 @@
 .bg-sobre-hero {
-    background-color: var(--bg-dark-hero);
+    background-color: var(--bg-hero);
     min-height: 20vh;
-    border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+    border-bottom: 1px solid var(--border-subtle);
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .bg-sobre-principal {
-    background-color: var(--bg-dark-principal);
+    background-color: var(--bg-principal);
     min-height: 80vh;
+    transition: background-color 0.3s;
 }
 
 .texto-introducao {
@@ -16,12 +18,12 @@
 
 .titulo-introducao {
     font-family: var(--font-serif);
-    color: var(--text-light-cream);
+    color: var(--text-title);
 }
 
 .texto-principal {
     font-family: var(--font-sans);
-    color: var(--text-muted-gold);
+    color: var(--text-body);
 }
 
 .leitura-otimizada {
@@ -30,14 +32,14 @@
 
 .titulo-secao-sobre {
     font-family: var(--font-serif) !important;
-    color: var(--text-light-cream);
+    color: var(--text-title);
     font-weight: 400;
     margin-top: 20px;
 }
 
 .desc-texto {
     font-family: var(--font-sans);
-    color: var(--text-muted-gold);
+    color: var(--text-body);
     font-size: 1.05rem;
     line-height: 1.8;
     text-align: justify;
@@ -49,7 +51,7 @@
 }
 
 .frase-destaque {
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--bg-quote);
     border-left: 3px solid var(--color-gold);
     padding: 30px;
     color: var(--text-quote);
@@ -58,10 +60,11 @@
     line-height: 1.8;
     font-style: italic;
     backdrop-filter: blur(4px);
+    transition: background 0.3s, color 0.3s;
 }
 
 .border-gold {
-    border-color: rgba(201, 168, 76, 0.15) !important;
+    border-color: var(--border-subtle) !important;
 }
 
 .btn-voltar-home {
@@ -76,6 +79,6 @@
 }
 
 .btn-voltar-home:hover {
-    color: var(--text-light-cream);
+    color: var(--text-title);
     transform: translateY(-2px);
 }

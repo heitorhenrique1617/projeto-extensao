@@ -1,8 +1,9 @@
 .bg-custom-introducao {
-    background-color: var(--bg-dark-hero);
+    background-color: var(--bg-hero);
     background-size: cover;
     background-position: center;
     min-height: 20vh; 
+    transition: background-color 0.3s;
 }
 
 .texto-introducao {
@@ -12,17 +13,18 @@
 
 .titulo-introducao {
     font-family: var(--font-serif);
-    color: var(--text-light-cream);
+    color: var(--text-title);
 }
 
 .texto-principal {
     font-family: var(--font-sans);
-    color: var(--text-muted-gold);
+    color: var(--text-body);
 }
 
 .bg-custom-museu {
-    background-color: var(--bg-dark-hero); 
+    background-color: var(--bg-hero); 
     min-height: 100vh;
+    transition: background-color 0.3s;
 }
 
 /* --- LINHA VERTICAL TIMELINE --- */
@@ -33,10 +35,10 @@
     left: 50%;
     transform: translateX(-50%);
     width: 1px;
-    background-color: rgba(201, 168, 76, 0.4);
+    background-color: var(--border-medium);
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out, background-color 0.3s;
 }
 
 .timeline-bar.ativo {
@@ -50,7 +52,8 @@
     background-color: var(--color-gold);
     z-index: 2;
     margin-top: 5px; 
-    box-shadow: 0 0 15px rgba(201, 168, 76, 0.8);
+    box-shadow: 0 0 15px var(--color-gold-glow);
+    transition: box-shadow 0.3s, background-color 0.3s;
 }
 
 .seculo-texto {
@@ -62,20 +65,20 @@
 
 .sub-texto {
     font-family: var(--font-sans);
-    color: var(--text-muted-gray);
+    color: var(--text-muted);
     font-size: 0.7rem;
     letter-spacing: 3px;
 }
 
 .titulo-periodo {
     font-family: var(--font-serif) !important;
-    color: var(--text-light-cream); 
+    color: var(--text-title); 
     font-weight: 400;
 }
 
 .desc-texto {
     font-family: var(--font-sans);
-    color: var(--text-muted-gold); 
+    color: var(--text-body); 
     font-size: 1.05rem;
     line-height: 1.7; 
     max-width: 800px;
@@ -85,16 +88,16 @@
     font-family: var(--font-serif);
     font-style: italic;
     font-size: 1.15rem;
-    color: var(--text-light-cream);
+    color: var(--text-title);
 }
 
 .desc-texto strong {
-    color: var(--text-muted-gold);
+    color: var(--text-body);
     font-weight: 600;
 }
 
 .frase-destaque {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-quote);
     border-left: 3px solid var(--color-gold);
     padding: 25px 30px;
     color: var(--text-quote);
@@ -103,6 +106,7 @@
     line-height: 2;
     font-style: italic;
     backdrop-filter: blur(4px);
+    transition: background 0.3s, color 0.3s;
 }
 
 .obra-tag {
@@ -118,30 +122,31 @@
 
 /* --- GLOSSÁRIO --- */
 .bg-custom-glossario {
-    background-color: var(--bg-dark-principal);
+    background-color: var(--bg-principal);
     min-height: 100vh; 
     display: flex;
     align-items: center;
     width: 100%;
+    transition: background-color 0.3s;
 }
 
 .movimento-card {
     background-color: var(--bg-card); 
-    border: 1px solid rgba(201, 168, 76, 0.15);
+    border: 1px solid var(--border-subtle);
     padding: 40px;
     height: 100%;
     transition: 0.3s;
 }
 
 .movimento-card:hover {
-    background-color: var(--bg-dark-hero);
+    background-color: var(--bg-hero);
     border-color: var(--color-gold);
 }
 
 .movimento-titulo {
     font-family: var(--font-serif);
     font-size: 2.2rem;
-    color: var(--text-light-cream);
+    color: var(--text-title);
     margin-bottom: 20px;
 }
 
@@ -153,7 +158,7 @@
 }
 
 .movimento-texto {
-    color: var(--text-card-desc);
+    color: var(--text-desc);
     font-family: var(--font-sans);
     line-height: 2;
     max-width: 300px;
