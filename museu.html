@@ -10,7 +10,7 @@
     <meta name="author" content="Heitor Henrique">
     
     <!-- Favicon -->
-    <link rel="icon" href="./images/logo.ico" type="image/x-icon">
+    <link class="icon" href="./images/logo.ico" type="image/x-icon">
 
     <!-- Otimização de Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +69,7 @@
                         </div>
                         
                         <h2 class="titulo-periodo display-5 mb-4 animar-scroll delay-2">Renascimento Italiano</h2>
-                        <p class="desc-texto mb-4 animar-scroll delay-3">O balé encontrou sua gênese nas sofisticadas cortes italianas do Renascimento como um requintado entretenimento aristocrático. Grandiosos eventos e celebrações de casamentos nobres combinavam música, poesia e declamação teatral a passos coreografados no chão, criando os chamados <strong>balletti</strong> (derivado de ballare, dançar). Mestres pioneiros, a exemplo de Domenico da Piacenza e Fabritio Caroso, redigiram os primeiros tratados de dança da Europa, estabelecendo as diretrizes iniciais que precederam a codificação técnica.</p>
+                        <p class="desc-texto mb-4 animar-scroll delay-3">O balé encontrou sua gênese nas sofisticadas cortes italianas do Renascimento como um requintado entretenimento aristocrático. Grandiosos events e celebrações de casamentos nobres combinavam música, poesia e declamação teatral a passos coreografados no chão, criando os chamados <strong>balletti</strong> (derivado de ballare, dançar). Mestres pioneiros, a exemplo de Domenico da Piacenza e Fabritio Caroso, redigiram os primeiros tratados de dança da Europa, estabelecendo as diretrizes iniciais que precederam a codificação técnica.</p>
                         <p class="desc-texto animar-scroll delay-4">O eixo dessa expressão artística deslocou-se para a França no século XVI por influência de Catarina de Médici. Seu matrimônio com o rei Henrique II introduziu músicos e coreógrafos italianos à corte francesa, culminando no desenvolvimento dos primeiros ballet de cour (balés de corte). Destaca-se o Ballet des Polonais (1573), encomendado pela rainha em honra a embaixadores poloneses.</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                         </div>
                         
                         <h2 class="titulo-periodo display-5 mb-4 animar-scroll delay-2">O balé no Brasil e a filial do Teatro Bolshoi</h2>
-                        <p class="desc-texto mb-4 animar-scroll delay-3">A história da dança no Brasil ganhou projeção internacional única com a instalação da Escola do Teatro Bolshoi no Brasil, in Joinville, Santa Catarina. Trata-se da única filial da renomada instituição russa fora de Moscou em seus mais de 200 anos de história.</p>
+                        <p class="desc-texto mb-4 animar-scroll delay-3">A história da dança no Brasil ganhou projeção internacional única com a instalação da Escola do Teatro Bolshoi no Brasil, em Joinville, Santa Catarina. Trata-se da única filial da renomada instituição russa fora de Moscou em seus mais de 200 anos de história.</p>
                         <p class="desc-texto animar-scroll delay-4">Idealizada nos anos 1990 pelo diretor Alexander Bogatyrev e inaugurada em março de 2000 por Vladimir Vasiliev, a instituição funciona como um polo social e artístico de excelência. Oferecendo bolsas integrais a centenas de estudantes oriundos de múltiplos estados brasileiros, a escola formou, ao longo de 25 anos, centenas de bailarinos que hoje integram seletas companhias distribuídas por cinco continentes.</p>
                     </div>
                 </div>
@@ -199,75 +199,112 @@
             </div>
         </section>
 
+        <!-- Seção do Glossário Técnico Modificada -->
         <section id="glossario" class="bg-custom-glossario">
             <div class="container py-5">
                 <div class="row g-4"> 
+                    
+                    <!-- Arabesque (Dança - Com Botão) -->
                     <div class="col-md-6 animar-scroll">
-                        <div class="movimento-card">
-                            <h2 class="movimento-titulo">Arabesque</h2>
-                            <p class="movimento-subtitulo">arabesk</p>
-                            <p class="movimento-texto">Posição em que o bailarino se apoia sobre uma das pernas, enquanto a outra é estendida para trás, paralela ao chão, criando uma linha contínua e alongada.</p>
+                        <div class="movimento-card h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h2 class="movimento-titulo">Arabesque</h2>
+                                <p class="movimento-subtitulo">arabesk</p>
+                                <p class="movimento-texto">Posição em que o bailarino se apoia sobre uma das pernas, enquanto a outra é estendida para trás, paralela ao chão, criando uma linha contínua e alongada.</p>
+                            </div>
+                            <!-- Substitua o ID_DO_VÍDEO pelo código real do YouTube -->
+                            <button class="btn-ver-passo text-start mt-3 border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalPasso" data-titulo="Arabesque" data-video="https://www.youtube.com/embed/SmRrfm1ihGg">
+                                VER PASSO &rarr;
+                            </button>
                         </div>
                     </div>
 
+                    <!-- Balletti (Histórico - Sem Botão) -->
                     <div class="col-md-6 animar-scroll delay-1">
-                        <div class="movimento-card">
+                        <div class="movimento-card h-100">
                             <h2 class="movimento-titulo">Balletti</h2>
                             <p class="movimento-subtitulo">balletto</p>
                             <p class="movimento-texto">Termo italiano do Renascimento que designava espetáculos coreografados de corte, combinando dança geométrica, música e poesia. Deu origem à palavra moderna "balé".</p>
                         </div>
                     </div>
 
+                    <!-- Balletomanes (Histórico - Sem Botão) -->
                     <div class="col-md-6 animar-scroll">
-                        <div class="movimento-card">
+                        <div class="movimento-card h-100">
                             <h2 class="movimento-titulo">Balletomanes</h2>
                             <p class="movimento-subtitulo">Balletomane</p>
                             <p class="movimento-texto">Expressão de origem russa utilizada para descrever entusiastas ardorosos e críticos devotos do balé.</p>
                         </div>
                     </div>
 
+                    <!-- En pointe (Dança - Com Botão) -->
                     <div class="col-md-6 animar-scroll delay-1">
-                        <div class="movimento-card">
-                            <h2 class="movimento-titulo">En pointe</h2>
-                            <p class="movimento-subtitulo">ãn puánt</p>
-                            <p class="movimento-texto">Técnica de suporte do peso corporal inteiramente sobre as extremidades dos dedos dos pés, viabilizada pelo uso de sapatilhas estruturadas com gesso e biqueiras rígidas.</p>
+                        <div class="movimento-card h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h2 class="movimento-titulo">En pointe</h2>
+                                <p class="movimento-subtitulo">ãn puánt</p>
+                                <p class="movimento-texto">Técnica de suporte do peso corporal inteiramente sobre as extremidades dos dedos dos pés, viabilizada pelo uso de sapatilhas estruturadas com gesso e biqueiras rígidas.</p>
+                            </div>
+                            <button class="btn-ver-passo text-start mt-3 border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalPasso" data-titulo="En pointe" data-video="https://www.youtube.com/embed/tj2VBAcKBcE">
+                                VER PASSO &rarr;
+                            </button>
                         </div>
                     </div>
 
+                    <!-- Jeté (Dança - Com Botão) -->
                     <div class="col-md-6 animar-scroll">
-                        <div class="movimento-card">
-                            <h2 class="movimento-titulo">Jeté</h2>
-                            <p class="movimento-subtitulo">jê-tê</p>
-                            <p class="movimento-texto">Salto que consiste na transferência do peso de um pé para o outro, no qual uma das pernas parece ser "lançada" no ar.</p>
+                        <div class="movimento-card h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h2 class="movimento-titulo">Jeté</h2>
+                                <p class="movimento-subtitulo">jê-tê</p>
+                                <p class="movimento-texto">Salto que consiste na transferência do peso de um pé para o outro, no qual uma das pernas parece ser "lançada" no ar.</p>
+                            </div>
+                            <button class="btn-ver-passo text-start mt-3 border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalPasso" data-titulo="Jeté" data-video="https://www.youtube.com/embed/pQv4_biZR8o">
+                                VER PASSO &rarr;
+                            </button>
                         </div>
                     </div>
 
+                    <!-- Pas de deux (Conceito - Sem Botão) -->
                     <div class="col-md-6 animar-scroll delay-1">
-                        <div class="movimento-card">
+                        <div class="movimento-card h-100">
                             <h2 class="movimento-titulo">Pas de deux</h2>
                             <p class="movimento-subtitulo">pá-dê-dô</p>
                             <p class="movimento-texto">Estrutura coreográfica tradicional concebida para um duo (geralmente uma bailarina e um bailarino), composta tipicamente por uma entrada, adágio, variações solos e uma coda final.</p>
                         </div>
                     </div>
 
+                    <!-- Pirouette (Dança - Com Botão) -->
                     <div class="col-md-6 animar-scroll">
-                        <div class="movimento-card">
-                            <h2 class="movimento-titulo">Pirouette</h2>
-                            <p class="movimento-subtitulo">piruét</p>
-                            <p class="movimento-texto">Giro completo ou rotação controlada do corpo sobre o eixo vertical, apoiando-se na meia-ponta ou ponta de uma única perna.</p>
+                        <div class="movimento-card h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h2 class="movimento-titulo">Pirouette</h2>
+                                <p class="movimento-subtitulo">piruét</p>
+                                <p class="movimento-texto">Giro completo ou rotação controlada do corpo sobre o eixo vertical, apoiando-se na meia-ponta ou ponta de uma única perna.</p>
+                            </div>
+                            <button class="btn-ver-passo text-start mt-3 border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalPasso" data-titulo="Pirouette" data-video="https://www.youtube.com/embed/fm-XZCi9skQ">
+                                VER PASSO &rarr;
+                            </button>
                         </div>
                     </div>
 
+                    <!-- Plié (Dança - Com Botão) -->
                     <div class="col-md-6 animar-scroll delay-1">
-                        <div class="movimento-card">
-                            <h2 class="movimento-titulo">Plié</h2>
-                            <p class="movimento-subtitulo">pliê</p>
-                            <p class="movimento-texto">Movimento básico que consiste na flexão controlada dos joelhos, essencial para o amortecimento de saltos e para a preparação de giros.</p>
+                        <div class="movimento-card h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h2 class="movimento-titulo">Plié</h2>
+                                <p class="movimento-subtitulo">pliê</p>
+                                <p class="movimento-texto">Movimento básico que consiste na flexão controlada dos joelhos, essencial para o amortecimento de saltos e para a preparação de giros.</p>
+                            </div>
+                            <button class="btn-ver-passo text-start mt-3 border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalPasso" data-titulo="Plié" data-video="https://www.youtube.com/embed/U_Z8RaEmfK0">
+                                VER PASSO &rarr;
+                            </button>
                         </div>
                     </div>
 
+                    <!-- Tutu (Vestuário - Sem Botão) -->
                     <div class="col-md-6 animar-scroll mx-auto">
-                        <div class="movimento-card">
+                        <div class="movimento-card h-100">
                             <h2 class="movimento-titulo">Tutu</h2>
                             <p class="movimento-subtitulo">tutú</p>
                             <p class="movimento-texto">Saia confeccionada em camadas sobrepostas de tule ou filó. Apresenta-se na versão romântica (longa, fluida e aérea) ou clássica (curta, rígida e ortogonal ao corpo).</p>
@@ -312,10 +349,28 @@
         </div>
     </footer>
 
+    <!-- MODAL INTEGRADO RESPONSIVO PARA INCORPORAÇÃO DO YOUTUBE -->
+    <div class="modal fade" id="modalPasso" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: var(--bg-card); border: 1px solid var(--border-subtle);">
+                <div class="modal-header border-0 pb-2">
+                    <h5 class="modal-title" id="modalTitulo" style="font-family: var(--font-serif); color: var(--text-title); font-size: 1.8rem;">Nome do Passo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="modalVideo" src="" title="Demonstração do passo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border: 0;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
+        // --- Sistema de Animação de Scroll ---
         const observador = new IntersectionObserver((entradas) => {
             entradas.forEach((entrada) => {
                 if (entrada.isIntersecting) {
@@ -331,42 +386,58 @@
         document.querySelectorAll(".animar-scroll").forEach((elemento) => {
             observador.observe(elemento);
         });
+
+        // --- Sistema de Controle Dinâmico do Vídeo do YouTube (Modal) ---
+        const modalPasso = document.getElementById('modalPasso');
+        const modalVideo = document.getElementById('modalVideo');
+        const modalTitulo = document.getElementById('modalTitulo');
+
+        if (modalPasso) {
+            // Executado imediatamente ao abrir a janela modal
+            modalPasso.addEventListener('show.bs.modal', function (event) {
+                const botao = event.relatedTarget;
+                const titulo = botao.getAttribute('data-titulo');
+                const videoSrc = botao.getAttribute('data-video');
+                
+                modalTitulo.textContent = titulo;
+                // Carrega a URL com o parâmetro de reprodução automática ativo
+                modalVideo.setAttribute('src', videoSrc + "?autoplay=1"); 
+            });
+
+            // Executado imediatamente ao fechar a janela modal (Evita áudio fantasma)
+            modalPasso.addEventListener('hide.bs.modal', function () {
+                modalVideo.setAttribute('src', '');
+            });
+        }
     });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    
+    // --- Sistema de Persistência e Alternância do Tema Claro/Escuro ---
+    document.addEventListener("DOMContentLoaded", function () {
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        let currentSessionTheme = sessionStorage.getItem('theme-session');
+        
+        if (!currentSessionTheme) {
+            currentSessionTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        
+        document.documentElement.setAttribute('data-theme', currentSessionTheme);
 
-    let currentSessionTheme = sessionStorage.getItem('theme-session');
-    
+        if (sessionStorage.getItem('theme-session') && themeToggleBtn) {
+            themeToggleBtn.textContent = currentSessionTheme === 'dark' ? 'Escuro' : 'Claro';
+        }
 
-    if (!currentSessionTheme) {
-        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-        currentSessionTheme = prefersLight ? 'light' : 'dark';
-    }
-    
-    document.documentElement.setAttribute('data-theme', currentSessionTheme);
-
-    if (sessionStorage.getItem('theme-session') && themeToggleBtn) {
-        themeToggleBtn.textContent = currentSessionTheme === 'dark' ? 'Escuro' : 'Claro';
-    }
-
-    if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', (e) => {
-            e.preventDefault(); 
-            
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            sessionStorage.setItem('theme-session', newTheme);
-            
-            themeToggleBtn.textContent = newTheme === 'dark' ? 'Escuro' : 'Claro';
-        });
-    }
-});
-
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', (e) => {
+                e.preventDefault(); 
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                document.documentElement.setAttribute('data-theme', newTheme);
+                sessionStorage.setItem('theme-session', newTheme);
+                themeToggleBtn.textContent = newTheme === 'dark' ? 'Escuro' : 'Claro';
+            });
+        }
+    });
     </script>
-
 </body>
 </html>
